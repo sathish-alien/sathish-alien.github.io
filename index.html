@@ -1,49 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sathish S - Full Stack Developer Portfolio</title>
+    <title>Sathish S - Full Stack Developer</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @keyframes float {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: translateY(0);
             }
+
             50% {
                 transform: translateY(-20px);
             }
         }
-        
+
         @keyframes blink {
-            0%, 100% {
+
+            0%,
+            100% {
                 opacity: 1;
             }
+
             50% {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       opacity: 0.5;
+                opacity: 0.5;
             }
         }
-        
+
         .float-animation {
             animation: float 3s ease-in-out infinite;
         }
-        
+
         .gradient-text {
             background: linear-gradient(45deg, #3b82f6, #8b5cf6, #ec4899);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
         }
-        
+
         .tech-icon {
             transition: all 0.3s ease;
         }
-        
+
         .tech-icon:hover {
             transform: scale(1.2);
         }
-        
+
         .loader {
             position: fixed;
             top: 0;
@@ -58,12 +65,12 @@
             z-index: 9999;
             transition: opacity 0.5s ease-out;
         }
-        
+
         .loader.fade-out {
             opacity: 0;
             pointer-events: none;
         }
-        
+
         .timeline-item:not(:last-child)::after {
             content: '';
             position: absolute;
@@ -73,22 +80,24 @@
             width: 2px;
             background: #374151;
         }
-        
+
         .contact-card {
             transition: all 0.3s ease;
         }
-        
+
         .contact-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
+
 <body class="bg-gray-900 text-gray-100 font-sans">
     <!-- Loader -->
     <div class="loader" id="loader">
         <div class="float-animation mb-8">
-            <img src="/fdd21639-f424-4258-8851-83fee7de4f61.png" alt="Logo" class="w-32 h-32 rounded-full border-4 border-blue-500 object-cover">
+            <img src="/fdd21639-f424-4258-8851-83fee7de4f61.png" alt="Logo"
+                class="w-32 h-32 rounded-full border-4 border-blue-500 object-cover">
         </div>
         <h1 class="text-4xl font-bold mb-2 gradient-text">Sathish S</h1>
         <p class="text-gray-400 mb-8">Full Stack Developer</p>
@@ -100,8 +109,10 @@
         <!-- Header -->
         <header class="flex justify-between items-center py-6">
             <div class="flex items-center">
-                <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center mr-3">
-                    <img src="/fdd21639-f424-4258-8851-83fee7de4f61.png" alt="Logo" class="w-full h-full rounded-full object-cover">
+                <div
+                    class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center mr-3">
+                    <img src="/fdd21639-f424-4258-8851-83fee7de4f61.png" alt="Logo"
+                        class="w-full h-full rounded-full object-cover">
                 </div>
                 <h1 class="text-2xl font-bold gradient-text">Sathish S</h1>
             </div>
@@ -136,25 +147,31 @@
                     Full Stack Developer
                 </h3>
                 <p class="text-gray-400 mb-8 max-w-lg">
-                    I build modern web applications using Laravel, Angular, React and more. 
+                    I build modern web applications using Laravel, Angular, React and more.
                     Passionate about creating efficient, scalable solutions with clean code.
                 </p>
                 <div class="flex flex-wrap gap-4">
-                    <a href="#contact" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full font-medium hover:opacity-90 transition">
+                    <a href="#contact"
+                        class="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full font-medium hover:opacity-90 transition">
                         Contact Me
                     </a>
-                    <a href="#projects" class="px-6 py-3 border border-gray-700 rounded-full font-medium hover:bg-gray-800 transition">
+                    <a href="#projects"
+                        class="px-6 py-3 border border-gray-700 rounded-full font-medium hover:bg-gray-800 transition">
                         View Projects
                     </a>
-                    <a href="#" class="px-6 py-3 border border-gray-700 rounded-full font-medium hover:bg-gray-800 transition flex items-center">
+                    <a href="#"
+                        class="px-6 py-3 border border-gray-700 rounded-full font-medium hover:bg-gray-800 transition flex items-center">
                         <i class="fas fa-file-pdf mr-2"></i> Download Resume
                     </a>
                 </div>
             </div>
             <div class="md:w-1/2 flex justify-center">
                 <div class="relative">
-                    <div class="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 absolute -z-10 top-0 left-0 blur-2xl"></div>
-                    <div class="w-64 h-64 md:w-80 md:h-80 bg-gray-800 rounded-2xl border border-gray-700 overflow-hidden">
+                    <div
+                        class="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 absolute -z-10 top-0 left-0 blur-2xl">
+                    </div>
+                    <div
+                        class="w-64 h-64 md:w-80 md:h-80 bg-gray-800 rounded-2xl border border-gray-700 overflow-hidden">
                         <img src="/alien.png" alt="Developer" class="w-full h-full object-cover">
                     </div>
                 </div>
@@ -169,11 +186,12 @@
                     My professional journey and the companies I've worked with.
                 </p>
             </div>
-            
+
             <div class="max-w-3xl mx-auto">
                 <!-- Experience 1 -->
                 <div class="relative timeline-item pl-12 pb-8">
-                    <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center">
+                    <div
+                        class="absolute left-0 top-0 w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center">
                         <i class="fas fa-briefcase text-white text-sm"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-1">Senior Full Stack Developer</h3>
@@ -183,23 +201,30 @@
                         <span>APR 2022 - Present</span>
                     </div>
                     <p class="text-gray-400 mb-2">
-                        Build enterprise-level applications, including ERP and inventory management systems, e-commerce platforms with payment integration, and solutions involving both hardware and software integration. Implemented CI/CD pipelines and microservices architecture.
+                        Build enterprise-level applications, including ERP and inventory management systems, e-commerce
+                        platforms with payment integration, and solutions involving both hardware and software
+                        integration. Implemented CI/CD pipelines and microservices architecture.
                     </p>
                     <div class="flex flex-wrap gap-2 mt-3">
                         <span class="text-xs px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full">Laravel</span>
                         <span class="text-xs px-3 py-1 bg-purple-500/10 text-purple-400 rounded-full">React</span>
                         <span class="text-xs px-3 py-1 bg-green-500/10 text-green-400 rounded-full">AWS</span>
-                        <span class="text-xs px-3 py-1 bg-yellow-500/10 text-yellow-400 rounded-full">Server Management</span>
+                        <span class="text-xs px-3 py-1 bg-yellow-500/10 text-yellow-400 rounded-full">Server
+                            Management</span>
                         <span class="text-xs px-3 py-1 bg-red-500/10 text-red-400 rounded-full">Angular</span>
                         <span class="text-xs px-3 py-1 bg-gray-500/10 text-gray-400 rounded-full">Github</span>
                         <span class="text-xs px-3 py-1 bg-orange-500/10 text-orange-400 rounded-full">Rest API</span>
-                        
+                        <span class="text-xs px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full">CI/CD Pipeline</span>
+                        <span class="text-xs px-3 py-1 bg-gray-500/10 text-gray-400 rounded-full">GitHub Actions</span>
+                        <span class="text-xs px-3 py-1 bg-green-500/10 text-green-400 rounded-full">Optimization</span>
+
                     </div>
                 </div>
-                
+
                 <!-- Experience 2 -->
                 <div class="relative timeline-item pl-12 pb-8">
-                    <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center">
+                    <div
+                        class="absolute left-0 top-0 w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center">
                         <i class="fas fa-briefcase text-white text-sm"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-1">Full Stack Developer</h3>
@@ -209,14 +234,18 @@
                         <span>JUN 2021 - MAR 2022</span>
                     </div>
                     <p class="text-gray-400 mb-2">
-                        CRM Application to manage the customers and internal team management software. Implemented features such as calls, daily activity report (DAR), project leads, document integration, and more APIs and integrations with other software.
+                        CRM Application to manage the customers and internal team management software. Implemented
+                        features such as calls, daily activity report (DAR), project leads, document integration, and
+                        more APIs and integrations with other software.
                     </p>
                     <div class="flex flex-wrap gap-2 mt-3">
                         <span class="text-xs px-3 py-1 bg-red-500/10 text-red-400 rounded-full">Laravel</span>
                         <span class="text-xs px-3 py-1 bg-yellow-500/10 text-yellow-400 rounded-full">Oracle</span>
                         <span class="text-xs px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full">MySQL</span>
-                        <span class="text-xs px-3 py-1 bg-green-500/10 text-green-400 rounded-full">Tally Integration</span>
-                        <span class="text-xs px-3 py-1 bg-purple-500/10 text-purple-400 rounded-full">AI Integration</span>
+                        <span class="text-xs px-3 py-1 bg-green-500/10 text-green-400 rounded-full">Tally
+                            Integration</span>
+                        <span class="text-xs px-3 py-1 bg-purple-500/10 text-purple-400 rounded-full">AI
+                            Integration</span>
                         <span class="text-xs px-3 py-1 bg-pink-500/10 text-pink-400 rounded-full">MongoDB</span>
                         <span class="text-xs px-3 py-1 bg-green-500/10 text-green-400 rounded-full">PHP</span>
                         <span class="text-xs px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full">jQuery</span>
@@ -233,7 +262,7 @@
                     I work with a variety of technologies to deliver complete solutions from frontend to backend.
                 </p>
             </div>
-            
+
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
                 <!-- Frontend -->
                 <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-purple-500 transition">
@@ -242,10 +271,10 @@
                     </div>
                     <h3 class="text-xl font-semibold mb-2">Frontend</h3>
                     <p class="text-gray-400 text-sm">
-                        React, Angular, Vue, JavaScript, TypeScript, HTML5, CSS3, Tailwind
+                        React, Angular, JavaScript, TypeScript, HTML5, CSS3, Tailwind
                     </p>
                 </div>
-                
+
                 <!-- Backend -->
                 <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-purple-500 transition">
                     <div class="w-12 h-12 bg-green-500/10 rounded-lg flex items-center justify-center mb-4">
@@ -253,10 +282,10 @@
                     </div>
                     <h3 class="text-xl font-semibold mb-2">Backend</h3>
                     <p class="text-gray-400 text-sm">
-                        Laravel, PHP, Node.js, Express, REST APIs, GraphQL, MySQL, MongoDB
+                        Laravel, PHP, Node.js, REST APIs, MySQL, Oracle and PL & Sql
                     </p>
                 </div>
-                
+
                 <!-- DevOps -->
                 <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-purple-500 transition">
                     <div class="w-12 h-12 bg-yellow-500/10 rounded-lg flex items-center justify-center mb-4">
@@ -267,7 +296,7 @@
                         Docker, AWS, CI/CD, Git, GitHub Actions, Linux Server Management
                     </p>
                 </div>
-                
+
                 <!-- Tools -->
                 <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-purple-500 transition">
                     <div class="w-12 h-12 bg-pink-500/10 rounded-lg flex items-center justify-center mb-4">
@@ -275,7 +304,7 @@
                     </div>
                     <h3 class="text-xl font-semibold mb-2">Tools</h3>
                     <p class="text-gray-400 text-sm">
-                        VS Code, Git, Postman, Figma, Jira, Trello, Slack
+                        VS Code, Git, Postman, swagger, Jira, Trello
                     </p>
                 </div>
             </div>
@@ -284,88 +313,449 @@
         <!-- Projects Section -->
         <section id="projects" class="py-20">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Featured <span class="gradient-text">Projects</span></h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Featured <span class="gradient-text">Projects</span>
+                </h2>
                 <p class="text-gray-400 max-w-2xl mx-auto">
                     Here are some of my recent projects that showcase my skills and expertise.
                 </p>
             </div>
-            
+
             <div class="grid md:grid-cols-2 gap-8">
                 <!-- Project 1 -->
-                <div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-purple-500 transition group">
-                    <div class="h-48 bg-gradient-to-r from-blue-500/20 to-purple-500/20 flex items-center justify-center">
-                        <img src="https://via.placeholder.com/600x400/1e293b/3b82f6?text=E-Commerce" alt="E-Commerce" class="w-full h-full object-cover opacity-70 group-hover:opacity-90 transition">
+                <div
+                    class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-purple-500 transition group">
+                    <div
+                        class="h-48 bg-gradient-to-r from-blue-500/20 to-purple-500/20 flex items-center justify-center">
+                        <img src="https://placehold.co/600x400/1e293b/3b82f6?text=AI Document" alt="E-Commerce"
+                            class="w-full h-full object-cover opacity-70 group-hover:opacity-90 transition">
+
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">E-Commerce Platform</h3>
+                        <h3 class="text-xl font-semibold mb-2">AI Document Reader</h3>
                         <p class="text-gray-400 text-sm mb-4">
-                            Full-featured e-commerce solution with Laravel backend and React frontend. Includes payment integration, inventory management, and admin dashboard.
+                            Reads invoices and bank statements, extracts key data using AI, and exports the results in
+                            JSON format for easy import into other software.
                         </p>
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full">Laravel</span>
                             <span class="text-xs px-3 py-1 bg-purple-500/10 text-purple-400 rounded-full">React</span>
                             <span class="text-xs px-3 py-1 bg-green-500/10 text-green-400 rounded-full">MySQL</span>
-                            <span class="text-xs px-3 py-1 bg-yellow-500/10 text-yellow-400 rounded-full">Stripe API</span>
+                            <span class="text-xs px-3 py-1 bg-yellow-500/10 text-yellow-400 rounded-full">DocumentGeni
+                                API</span>
                         </div>
                         <div class="mt-4 flex space-x-3">
-                            <a href="#" class="text-sm text-blue-400 hover:text-blue-300 transition">
+                            <!-- <a href="#" class="text-sm text-blue-400 hover:text-blue-300 transition">
                                 <i class="fas fa-external-link-alt mr-1"></i> Live Demo
-                            </a>
-                            <a href="#" class="text-sm text-gray-400 hover:text-white transition">
+                            </a> -->
+                            <a href="https://github.com/sathish-alien/AI-Document"
+                                class="text-sm text-gray-400 hover:text-white transition">
                                 <i class="fab fa-github mr-1"></i> View Code
                             </a>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Project 2 -->
-                <div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-purple-500 transition group">
-                    <div class="h-48 bg-gradient-to-r from-purple-500/20 to-pink-500/20 flex items-center justify-center">
-                        <img src="https://via.placeholder.com/600x400/1e293b/8b5cf6?text=Analytics" alt="Analytics" class="w-full h-full object-cover opacity-70 group-hover:opacity-90 transition">
+                <div
+                    class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-purple-500 transition group">
+                    <div
+                        class="h-48 bg-gradient-to-r from-green-500/20 to-blue-500/20 flex items-center justify-center">
+                        <img src="https://placehold.co/600x400/1e293b/10b981?text=CRM" alt="CRM Project"
+                            class="w-full h-full object-cover opacity-70 group-hover:opacity-90 transition">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Analytics Dashboard</h3>
+                        <h3 class="text-xl font-semibold mb-2">CRM</h3>
                         <p class="text-gray-400 text-sm mb-4">
-                            Real-time data visualization dashboard built with Angular and Node.js. Features interactive charts, user management, and data export.
+                            A comprehensive CRM platform featuring dashboards, analytics, call tracking, project
+                            management, customer and lead management, feedback collection, and quotation follow-up.
+                            Designed for efficient team collaboration and customer engagement.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full">Laravel</span>
+                            <span class="text-xs px-3 py-1 bg-yellow-500/10 text-yellow-400 rounded-full">MySQL</span>
+                            <span class="text-xs px-3 py-1 bg-green-500/10 text-green-400 rounded-full">REST API</span>
+                            <span class="text-xs px-3 py-1 bg-gray-500/10 text-gray-400 rounded-full">GitHub
+                                Actions</span>
+                            <span
+                                class="text-xs px-3 py-1 bg-indigo-500/10 text-indigo-400 rounded-full">ApexCharts</span>
+                            <span class="text-xs px-3 py-1 bg-pink-500/10 text-pink-400 rounded-full">Chart.js</span>
+                            <span class="text-xs px-3 py-1 bg-purple-500/10 text-purple-400 rounded-full">Charts</span>
+                        </div>
+                        <div class="mt-4 flex space-x-3">
+                            <!-- <a href="#" class="text-sm text-blue-400 hover:text-blue-300 transition">
+                                <i class="fas fa-external-link-alt mr-1"></i> Live Demo
+                            </a> -->
+                            <a href="https://github.com/sathish-alien/crm"
+                                class="text-sm text-gray-400 hover:text-white transition">
+                                <i class="fab fa-github mr-1"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3: Angular Dashboard -->
+                <div
+                    class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-purple-500 transition group">
+                    <div
+                        class="h-48 bg-gradient-to-r from-yellow-500/20 to-blue-500/20 flex items-center justify-center">
+                        <img src="https://placehold.co/600x400/1e293b/f59e42?text=Angular+Dashboard"
+                            alt="Angular Dashboard"
+                            class="w-full h-full object-cover opacity-70 group-hover:opacity-90 transition">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Angular Dashboard with Laravel API</h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            A modern dashboard built with Angular, powered by a Laravel REST API backend. Features
+                            interactive analytics using Chart.js and ApexCharts, styled with Bootstrap 5 for a
+                            responsive UI.
                         </p>
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs px-3 py-1 bg-red-500/10 text-red-400 rounded-full">Angular</span>
-                            <span class="text-xs px-3 py-1 bg-yellow-500/10 text-yellow-400 rounded-full">Node.js</span>
-                            <span class="text-xs px-3 py-1 bg-pink-500/10 text-pink-400 rounded-full">MongoDB</span>
-                            <span class="text-xs px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full">Chart.js</span>
+                            <span class="text-xs px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full">Laravel API</span>
+                            <span
+                                class="text-xs px-3 py-1 bg-yellow-500/10 text-yellow-400 rounded-full">Chart.js</span>
+                            <span
+                                class="text-xs px-3 py-1 bg-indigo-500/10 text-indigo-400 rounded-full">ApexCharts</span>
+                            <span class="text-xs px-3 py-1 bg-pink-500/10 text-pink-400 rounded-full">Bootstrap 5</span>
                         </div>
                         <div class="mt-4 flex space-x-3">
-                            <a href="#" class="text-sm text-blue-400 hover:text-blue-300 transition">
+                            <!-- <a href="https://github.com/sathish-alien/angular-dashboard" class="text-sm text-gray-400 hover:text-white transition">
+                                <i class="fab fa-github mr-1"></i> View Code
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4: Portfolio Website -->
+                <div
+                    class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-purple-500 transition group">
+                    <div class="h-48 bg-gradient-to-r from-pink-500/20 to-blue-500/20 flex items-center justify-center">
+                        <img src="https://placehold.co/600x400/1e293b/ec4899?text=Portfolio" alt="Portfolio Website"
+                            class="w-full h-full object-cover opacity-70 group-hover:opacity-90 transition">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            Personal portfolio site to showcase my projects, skills, and contact details. Built with
+                            React and Tailwind CSS for a modern, responsive design.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full">React</span>
+                            <span class="text-xs px-3 py-1 bg-pink-500/10 text-pink-400 rounded-full">Tailwind
+                                CSS</span>
+                            <span
+                                class="text-xs px-3 py-1 bg-yellow-500/10 text-yellow-400 rounded-full">JavaScript</span>
+                            <span class="text-xs px-3 py-1 bg-purple-500/10 text-purple-400 rounded-full">SCSS</span>
+                        </div>
+                        <div class="mt-4 flex space-x-3">
+                            <a href="https://sathish-alien.github.io/"
+                                class="text-sm text-blue-400 hover:text-blue-300 transition">
                                 <i class="fas fa-external-link-alt mr-1"></i> Live Demo
                             </a>
-                            <a href="#" class="text-sm text-gray-400 hover:text-white transition">
+                            <a href="https://github.com/sathish-alien/sathish-alien.github.io"
+                                class="text-sm text-gray-400 hover:text-white transition">
                                 <i class="fab fa-github mr-1"></i> View Code
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             <div class="text-center mt-12">
-                <a href="#" class="inline-flex items-center px-6 py-3 border border-gray-700 rounded-full font-medium hover:bg-gray-800 transition">
+                <button id="show-more-projects"
+                    class="inline-flex items-center px-6 py-3 border border-gray-700 rounded-full font-medium hover:bg-gray-800 transition">
                     View All Projects
                     <i class="fas fa-arrow-right ml-2"></i>
-                </a>
+                </button>
             </div>
+            <!-- Hidden extra projects -->
+            <div id="extra-projects" class="grid md:grid-cols-2 gap-8 mt-8 hidden">
+                <!-- Project 5 -->
+                <div
+                    class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-purple-500 transition group">
+                    <div
+                        class="h-48 bg-gradient-to-r from-blue-500/20 to-green-500/20 flex items-center justify-center">
+                        <img src="https://placehold.co/600x400/1e293b/3b82f6?text=B2C+App" alt="B2C App"
+                            class="w-full h-full object-cover opacity-70 group-hover:opacity-90 transition">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">B2C Commerce Platform</h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            A flexible B2C application for any business, featuring item master, price master, discount
+                            master, stock and out-of-stock management, special customer discounts, delivery amount
+                            calculation by distance (km), delivery slot selection, holiday and special working day
+                            configuration.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full">Laravel</span>
+                            <span class="text-xs px-3 py-1 bg-yellow-500/10 text-yellow-400 rounded-full">REST
+                                API</span>
+                            <span class="text-xs px-3 py-1 bg-purple-500/10 text-purple-400 rounded-full">Google Maps
+                                API</span>
+                            <span class="text-xs px-3 py-1 bg-pink-500/10 text-pink-400 rounded-full">MySQL</span>
+                        </div>
+                        <!-- <div class="mt-4 flex space-x-3">
+                            <a href="#" class="text-sm text-gray-400 hover:text-white transition">
+                                <i class="fab fa-github mr-1"></i> View Code
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+                <div
+                    class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-purple-500 transition group">
+                    <div
+                        class="h-48 bg-gradient-to-r from-green-500/20 to-blue-500/20 flex items-center justify-center">
+                        <img src="https://placehold.co/600x400/1e293b/10b981?text=ERP+System" alt="ERP System"
+                            class="w-full h-full object-cover opacity-70 group-hover:opacity-90 transition">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">ERP Management System</h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            Comprehensive ERP solution for inventory, sales, and HR management. Includes reporting,
+                            analytics, and multi-user roles.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs px-3 py-1 bg-green-500/10 text-green-400 rounded-full">PHP</span>
+                            <span class="text-xs px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full">MySQL</span>
+                            <span class="text-xs px-3 py-1 bg-yellow-500/10 text-yellow-400 rounded-full">REST
+                                API</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 6: Farm Management System -->
+                <div
+                    class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-purple-500 transition group">
+                    <div
+                        class="h-48 bg-gradient-to-r from-green-500/20 to-yellow-500/20 flex items-center justify-center">
+                        <img src="https://placehold.co/600x400/1e293b/22c55e?text=Farm+Management"
+                            alt="Farm Management System"
+                            class="w-full h-full object-cover opacity-70 group-hover:opacity-90 transition">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Farm Management System</h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            Comprehensive solution for managing farm operations including shed management, livestock
+                            stock tracking, purchase and sales records, production monitoring, and detailed reporting
+                            for better decision making.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs px-3 py-1 bg-green-500/10 text-green-400 rounded-full">PHP</span>
+                            <span class="text-xs px-3 py-1 bg-yellow-500/10 text-yellow-400 rounded-full">REST
+                                API</span>
+                            <span class="text-xs px-3 py-1 bg-purple-500/10 text-purple-400 rounded-full">MySQL</span>
+                            <span class="text-xs px-3 py-1 bg-pink-500/10 text-pink-400 rounded-full">Reports</span>
+                        </div>
+                        <!-- <div class="mt-4 flex space-x-3">
+                            <a href="#" class="text-sm text-gray-400 hover:text-white transition">
+                                <i class="fab fa-github mr-1"></i> View Code
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+                <!-- Project 7: REST API & Weighbridge Integration -->
+                <div
+                    class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-purple-500 transition group">
+                    <div class="h-48 bg-gradient-to-r from-gray-500/20 to-blue-500/20 flex items-center justify-center">
+                        <img src="https://placehold.co/600x400/1e293b/64748b?text=Weighbridge+API"
+                            alt="Weighbridge Integration"
+                            class="w-full h-full object-cover opacity-70 group-hover:opacity-90 transition">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">REST API & Weighbridge Integration</h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            Integrated industrial weighbridge hardware with backend systems using SSH to securely read
+                            weight values. Exposed REST APIs for real-time data access and automation in logistics and
+                            inventory workflows.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full">REST API</span>
+                            <span class="text-xs px-3 py-1 bg-gray-500/10 text-gray-400 rounded-full">SSH</span>
+                            <span class="text-xs px-3 py-1 bg-yellow-500/10 text-yellow-400 rounded-full">Hardware
+                                Integration</span>
+                            <span
+                                class="text-xs px-3 py-1 bg-purple-500/10 text-purple-400 rounded-full">Automation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                document.getElementById('show-more-projects').addEventListener('click', function () {
+                    const extra = document.getElementById('extra-projects');
+                    extra.classList.toggle('hidden');
+                    this.textContent = extra.classList.contains('hidden') ? 'View All Projects' : 'Show Less';
+                    if (!extra.classList.contains('hidden')) {
+                        this.innerHTML = 'Show Less <i class="fas fa-arrow-up ml-2"></i>';
+                    } else {
+                        this.innerHTML = 'View All Projects <i class="fas fa-arrow-right ml-2"></i>';
+                    }
+                });
+            </script>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="py-20">
+        <!-- GitHub Analytics Section -->
+        <section id="github-analytics" class="py-20">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Get In <span class="gradient-text">Touch</span></h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    <span class="gradient-text">GitHub Analytics</span>
+                </h2>
                 <p class="text-gray-400 max-w-2xl mx-auto">
-                    Have a project in mind or want to discuss potential opportunities? Feel free to reach out!
+                    A quick overview of my GitHub activity and contributions, including private repositories.
                 </p>
             </div>
-            
-            <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                <!-- Repo Count -->
+                <div class="bg-gray-800 rounded-2xl border border-gray-700 p-8 flex flex-col items-center w-72 mb-6 md:mb-0">
+                    <i class="fab fa-github text-4xl text-gray-400 mb-4"></i>
+                    <div class="text-3xl font-bold gradient-text" id="repo-count">--</div>
+                    <div class="text-gray-400 mt-2">Public Repositories</div>
+                </div>
+                <!-- Commit Count -->
+                <div class="bg-gray-800 rounded-2xl border border-gray-700 p-8 flex flex-col items-center w-72 mb-6 md:mb-0">
+                    <i class="fas fa-code-branch text-4xl text-purple-400 mb-4"></i>
+                    <div class="text-3xl font-bold gradient-text" id="commit-count">--</div>
+                    <div class="text-gray-400 mt-2">Total Commits (last year)</div>
+                </div>
+            </div>
+            <!-- Commit Chart -->
+            <div class="max-w-3xl mx-auto mt-12 bg-gray-800 rounded-2xl border border-gray-700 p-8">
+                <h3 class="text-xl font-semibold mb-6 text-center">Commit Activity (Last 12 Months)</h3>
+                <canvas id="commitChart" height="120"></canvas>
+            </div>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+            // GitHub username
+            const githubUser = 'sathish-alien';
+
+            // Fetch repo count
+            fetch(`https://api.github.com/users/${githubUser}`)
+                .then(res => res.json())
+                .then(data => {
+                    document.getElementById('repo-count').textContent = data.public_repos || '--';
+                });
+
+            // Fetch commit activity (last year) and total commits
+            fetch(`https://api.github.com/users/${githubUser}/repos?per_page=100`)
+                .then(res => res.json())
+                .then(async repos => {
+                    let commitCounts = Array(12).fill(0);
+                    let totalCommits = 0;
+                    const now = new Date();
+                    const months = [];
+                    for (let i = 11; i >= 0; i--) {
+                        const d = new Date(now.getFullYear(), now.getMonth() - i, 1);
+                        months.push(d.toLocaleString('default', { month: 'short', year: '2-digit' }));
+                    }
+
+                    // Limit to 10 repos for API rate limits
+                    const repoSlice = repos.slice(0, 10);
+
+                    await Promise.all(repoSlice.map(async repo => {
+                        // Get commit activity per week for each repo
+                        const res = await fetch(`https://api.github.com/repos/${githubUser}/${repo.name}/stats/commit_activity`);
+                        const stats = await res.json();
+                        if (Array.isArray(stats)) {
+                            stats.slice(-52).forEach((week, idx) => {
+                                // Map week to month
+                                const weekDate = new Date(week.week * 1000);
+                                const monthIdx = now.getMonth() - (11 - Math.floor(idx / 4.33));
+                                if (monthIdx >= 0 && monthIdx < 12) {
+                                    commitCounts[monthIdx] += week.total;
+                                }
+                                totalCommits += week.total;
+                            });
+                        }
+                    }));
+
+                    document.getElementById('commit-count').textContent = totalCommits;
+
+                    // Draw chart
+                    const ctx = document.getElementById('commitChart').getContext('2d');
+                    new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: months,
+                            datasets: [{
+                                label: 'Commits',
+                                data: commitCounts,
+                                backgroundColor: 'rgba(139, 92, 246, 0.7)',
+                                borderRadius: 6,
+                            }]
+                        },
+                        options: {
+                            plugins: {
+                                legend: { display: false }
+                            },
+                            scales: {
+                                x: { grid: { display: false }, ticks: { color: '#d1d5db' } },
+                                y: { grid: { color: '#374151' }, ticks: { color: '#d1d5db', beginAtZero: true } }
+                            }
+                        }
+                    });
+                });
+        </script>
+        <!-- Contact Section -->
+        <section id="contact" class="py-5">
+            <div class="text-center mb-4">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Contact <span class="gradient-text">Information</span>
+                </h2>
+                <div class="flex flex-col items-center space-y-4 mt-6">
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-user text-blue-400 text-xl"></i>
+                        <span class="text-lg font-medium">Sathish S</span>
+                    </div>
+                    <div class="w-full flex justify-center"></div>
+                    <div
+                        class="bg-gray-800 rounded-2xl border border-gray-700 p-4 flex items-center space-x-4 contact-card max-w-md w-full mb-2">
+                        <div class="w-12 h-12 bg-green-500/10 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-envelope text-green-400 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-1">Email</h3>
+                            <a href="mailto:sathishksc1999@gmail.com"
+                                class="text-gray-400 hover:text-white transition">sathishksc1999@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 rounded-2xl border border-gray-700 p-4 flex items-center space-x-4 contact-card max-w-md w-full mb-2">
+                        <div class="w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-map-marker-alt text-blue-400 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-1">Location</h3>
+                            <span class="text-gray-400">Banglore, India</span>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 rounded-2xl border border-gray-700 p-4 flex items-center space-x-4 contact-card max-w-md w-full mb-2">
+                        <div class="w-12 h-12 bg-purple-500/10 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-phone-alt text-purple-400 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-1">Phone</h3>
+                            <a href="tel:+916379559490" class="text-gray-400 hover:text-white transition">+91 63795 59490</a>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 rounded-2xl border border-gray-700 p-4 flex items-center space-x-4 contact-card max-w-md w-full mb-2">
+                        <div class="w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center">
+                            <i class="fab fa-linkedin-in text-blue-500 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-1">LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/sathish-s-alien/" target="_blank" class="text-gray-400 hover:text-white transition">linkedin.com/in/sathish-alien</a>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 rounded-2xl border border-gray-700 p-4 flex items-center space-x-4 contact-card max-w-md w-full mb-2">
+                        <div class="w-12 h-12 bg-gray-500/10 rounded-lg flex items-center justify-center">
+                            <i class="fab fa-github text-gray-400 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-1">GitHub</h3>
+                            <a href="https://github.com/sathish-alien" target="_blank" class="text-gray-400 hover:text-white transition">github.com/sathish-alien</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    <!-- <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
                 <!-- Contact Form -->
-                <div class="bg-gray-800 rounded-2xl border border-gray-700 p-8">
+    <!-- <div class="bg-gray-800 rounded-2xl border border-gray-700 p-8">
                     <h3 class="text-xl font-semibold mb-6">Send me a message</h3>
                     <form>
                         <div class="mb-4">
@@ -388,10 +778,10 @@
                             Send Message
                         </button>
                     </form>
-                </div>
-                
-                <!-- Contact Cards -->
-                <div class="space-y-6">
+                </div> -->
+
+    <!-- Contact Cards -->
+    <!-- <div class="space-y-6">
                     <div class="bg-gray-800 rounded-2xl border border-gray-700 p-6 contact-card">
                         <div class="flex items-start">
                             <div class="w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center mr-4">
@@ -456,16 +846,16 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
+                </div> -->
+    <!-- </div> -->
+    </section>
 
-        <!-- Footer -->
-        <footer class="py-12 border-t border-gray-800">
+    <!-- Footer -->
+    <!-- <footer class="py-12 border-t border-gray-800">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="flex items-center mb-6 md:mb-0">
                     <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center mr-3">
-                        <img src="https://via.placeholder.com/40/3b82f6/ffffff?text=SS" alt="Logo" class="w-full h-full rounded-full object-cover">
+                        <img src="https://placehold.co/40/3b82f6/ffffff?text=SS" alt="Logo" class="w-full h-full rounded-full object-cover">
                     </div>
                     <h2 class="text-xl font-bold">Sathish S</h2>
                 </div>
@@ -477,31 +867,22 @@
                     <a href="#" class="text-gray-400 hover:text-white transition" title="LinkedIn">
                         <i class="fab fa-linkedin-in text-xl"></i>
                     </a>
-                    <a href="#" class="text-gray-400 hover:text-white transition" title="Twitter">
-                        <i class="fab fa-twitter text-xl"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white transition" title="Discord">
-                        <i class="fab fa-discord text-xl"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white transition" title="Stack Overflow">
-                        <i class="fab fa-stack-overflow text-xl"></i>
-                    </a>
                 </div>
                 
                 <div class="text-gray-400 text-sm">
                     &copy; 2023 Sathish S. All rights reserved.
                 </div>
             </div>
-        </footer>
+        </footer> -->
     </div>
 
     <script>
         // Loader animation
-        window.addEventListener('load', function() {
-            setTimeout(function() {
+        window.addEventListener('load', function () {
+            setTimeout(function () {
                 document.getElementById('loader').classList.add('fade-out');
-                
-                setTimeout(function() {
+
+                setTimeout(function () {
                     document.getElementById('loader').style.display = 'none';
                 }, 500);
             }, 1500);
@@ -511,7 +892,7 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
+
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
@@ -519,10 +900,11 @@
         });
 
         // Mobile menu toggle
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
             const menu = document.getElementById('mobile-menu');
             menu.classList.toggle('hidden');
         });
     </script>
 </body>
+
 </html>
