@@ -159,7 +159,7 @@
                         class="px-6 py-3 border border-gray-700 rounded-full font-medium hover:bg-gray-800 transition">
                         View Projects
                     </a>
-                    <a href="#"
+                    <a download href="/assets/SathishS.pdf"
                         class="px-6 py-3 border border-gray-700 rounded-full font-medium hover:bg-gray-800 transition flex items-center">
                         <i class="fas fa-file-pdf mr-2"></i> Download Resume
                     </a>
@@ -600,98 +600,18 @@
                     A quick overview of my GitHub activity and contributions, including private repositories.
                 </p>
             </div>
-            <div class="flex flex-col md:flex-row justify-center items-center gap-8">
-                <!-- Repo Count -->
-                <div class="bg-gray-800 rounded-2xl border border-gray-700 p-8 flex flex-col items-center w-72 mb-6 md:mb-0">
-                    <i class="fab fa-github text-4xl text-gray-400 mb-4"></i>
-                    <div class="text-3xl font-bold gradient-text" id="repo-count">--</div>
-                    <div class="text-gray-400 mt-2">Public Repositories</div>
-                </div>
-                <!-- Commit Count -->
-                <div class="bg-gray-800 rounded-2xl border border-gray-700 p-8 flex flex-col items-center w-72 mb-6 md:mb-0">
-                    <i class="fas fa-code-branch text-4xl text-purple-400 mb-4"></i>
-                    <div class="text-3xl font-bold gradient-text" id="commit-count">--</div>
-                    <div class="text-gray-400 mt-2">Total Commits (last year)</div>
-                </div>
-            </div>
             <!-- Commit Chart -->
             <div class="max-w-3xl mx-auto mt-12 bg-gray-800 rounded-2xl border border-gray-700 p-8">
-                <h3 class="text-xl font-semibold mb-6 text-center">Commit Activity (Last 12 Months)</h3>
-                <canvas id="commitChart" height="120"></canvas>
+                <h3 class="text-xl font-semibold mb-6 text-center"></h3>
+                <div class="flex flex-col items-center space-y-6">
+                    <img src="https://github-readme-stats-sathish-aliens-projects.vercel.app/api?username=sathish-alien&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" height="150" alt="stats graph" />
+                    <img src="https://github-readme-stats-sathish-aliens-projects.vercel.app/api/top-langs?username=sathish-alien&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="150" alt="languages graph" />
+                    <img src="https://github-readme-streak-stats.herokuapp.com?user=Sathish-alien&theme=burnt-neon&hide_border=false&date_format=M%20j%5B,%20Y%5D&mode=weekly" height="150" alt="languages graph" />
+                </div>
             </div>
         </section>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script>
-            // GitHub username
-            const githubUser = 'sathish-alien';
-
-            // Fetch repo count
-            fetch(`https://api.github.com/users/${githubUser}`)
-                .then(res => res.json())
-                .then(data => {
-                    document.getElementById('repo-count').textContent = data.public_repos || '--';
-                });
-
-            // Fetch commit activity (last year) and total commits
-            fetch(`https://api.github.com/users/${githubUser}/repos?per_page=100`)
-                .then(res => res.json())
-                .then(async repos => {
-                    let commitCounts = Array(12).fill(0);
-                    let totalCommits = 0;
-                    const now = new Date();
-                    const months = [];
-                    for (let i = 11; i >= 0; i--) {
-                        const d = new Date(now.getFullYear(), now.getMonth() - i, 1);
-                        months.push(d.toLocaleString('default', { month: 'short', year: '2-digit' }));
-                    }
-
-                    // Limit to 10 repos for API rate limits
-                    const repoSlice = repos.slice(0, 10);
-
-                    await Promise.all(repoSlice.map(async repo => {
-                        // Get commit activity per week for each repo
-                        const res = await fetch(`https://api.github.com/repos/${githubUser}/${repo.name}/stats/commit_activity`);
-                        const stats = await res.json();
-                        if (Array.isArray(stats)) {
-                            stats.slice(-52).forEach((week, idx) => {
-                                // Map week to month
-                                const weekDate = new Date(week.week * 1000);
-                                const monthIdx = now.getMonth() - (11 - Math.floor(idx / 4.33));
-                                if (monthIdx >= 0 && monthIdx < 12) {
-                                    commitCounts[monthIdx] += week.total;
-                                }
-                                totalCommits += week.total;
-                            });
-                        }
-                    }));
-
-                    document.getElementById('commit-count').textContent = totalCommits;
-
-                    // Draw chart
-                    const ctx = document.getElementById('commitChart').getContext('2d');
-                    new Chart(ctx, {
-                        type: 'bar',
-                        data: {
-                            labels: months,
-                            datasets: [{
-                                label: 'Commits',
-                                data: commitCounts,
-                                backgroundColor: 'rgba(139, 92, 246, 0.7)',
-                                borderRadius: 6,
-                            }]
-                        },
-                        options: {
-                            plugins: {
-                                legend: { display: false }
-                            },
-                            scales: {
-                                x: { grid: { display: false }, ticks: { color: '#d1d5db' } },
-                                y: { grid: { color: '#374151' }, ticks: { color: '#d1d5db', beginAtZero: true } }
-                            }
-                        }
-                    });
-                });
-        </script>
+        
         <!-- Contact Section -->
         <section id="contact" class="py-5">
             <div class="text-center mb-4">
@@ -750,6 +670,46 @@
                             <a href="https://github.com/sathish-alien" target="_blank" class="text-gray-400 hover:text-white transition">github.com/sathish-alien</a>
                         </div>
                     </div>
+                    <!-- Resume Popup Button -->
+                    <button id="view-resume-btn" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full font-medium hover:opacity-90 transition flex items-center mt-4">
+                        <i class="fas fa-file-pdf mr-2"></i> View Resume
+                    </button>
+
+                    <!-- Resume Modal -->
+                    <div id="resume-modal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
+                        <div class="bg-gray-900 rounded-2xl p-6 max-w-3xl w-full relative shadow-lg border border-gray-700">
+                            <button id="close-resume-modal" class="absolute top-4 right-4 text-gray-400 hover:text-white text-2xl focus:outline-none">
+                                <i class="fas fa-times"></i>
+                            </button>
+                            <div class="h-[70vh]">
+                                <iframe src="/assets/SathishS.pdf" class="w-full h-full rounded-lg border-none" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        // Resume Modal Logic
+                        const viewResumeBtn = document.getElementById('view-resume-btn');
+                        const resumeModal = document.getElementById('resume-modal');
+                        const closeResumeModal = document.getElementById('close-resume-modal');
+
+                        viewResumeBtn.addEventListener('click', () => {
+                            resumeModal.classList.remove('hidden');
+                            document.body.style.overflow = 'hidden';
+                        });
+
+                        closeResumeModal.addEventListener('click', () => {
+                            resumeModal.classList.add('hidden');
+                            document.body.style.overflow = '';
+                        });
+
+                        // Close modal on outside click
+                        resumeModal.addEventListener('click', (e) => {
+                            if (e.target === resumeModal) {
+                                resumeModal.classList.add('hidden');
+                                document.body.style.overflow = '';
+                            }
+                        });
+                    </script>
                 </div>
             </div>
 
